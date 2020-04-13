@@ -1,0 +1,38 @@
+.main {
+    background-color: #11343a;
+    min-height: 950px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    .main-wrapper {
+        background-color: #122a2f;
+        width: 100%;
+        min-height: 370px;
+        padding: 50px 0;
+        .col-wrapper {
+            text-align: center;
+            h1 {
+                color: white;
+                font-size: 65px;
+                font-weight: bold;
+                text-transform: uppercase;
+                text-align: center;
+                margin-bottom: 45px;
+            }
+            .btn-buy {
+                text-transform: uppercase;
+            }
+        }
+    } 
+    .btn-down {
+        width: 60px;
+        height: 60px;
+
+        padding: 0;
+        bottom: 0;
+        right: calc(50% - 30px);
+    }
+}

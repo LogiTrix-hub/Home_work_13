@@ -1,0 +1,95 @@
+@import "../_custom";
+
+.content-wrapper {
+    padding-top: 55px;
+    h4 {
+        text-transform: uppercase;
+        font:400 16px 'Oswald', sans-serif;
+
+        margin: 0 0 15px;
+    }
+    h2 {
+        text-transform: uppercase;
+        font:700 30px 'Oswald', sans-serif;
+        position: relative;
+
+        margin: 0 0 24px;
+        padding-bottom: 21px;
+
+        &::after {
+            content: '';
+
+            height: 3px;
+            width: 170px;
+            background-color: #ffe600;
+
+            position: absolute;
+            bottom: 0;
+            right: calc(50% - 85px);
+
+        }
+    }
+    .text-box {
+        p {
+            @extend %p-box;
+        }
+    }
+
+    .column-content { //list-icon
+        text-align: center;
+        .ico-web,.ico-graphic,.ico-photography,.ico-developing {
+            width: 108px;
+            height: 108px;
+            background-color: #ffe600;
+            margin-bottom: 20px;
+
+            border: 1px solid transparent;
+            border-radius: 50%;
+
+            display: inline-block;
+            position: relative;
+
+            transition: linear 0.2s;
+            &:before {
+                font: 40px 'icomoon', sans-serif;
+                color: white;
+                position: absolute;
+                top: calc(50% - 20px);
+                right: 0;
+                left: 0;
+
+                transition: linear 0.2s;
+            }
+            &:hover {
+                background-color: transparent;
+                border: 1px solid black;
+                &:before {
+                    color: black;
+                }
+            }
+        }
+        .ico-web:before {
+            content: "\e902";
+        }
+        .ico-graphic:before {
+            content: '\e903';
+        }
+        .ico-photography:before {
+            content: '\e901';
+        }
+        .ico-developing:before {
+            content: '\e900';
+        }
+
+        h3 {
+            font-size: 20px;
+            font-weight: bold;
+            text-transform: uppercase;
+
+            margin-bottom: 24px;
+        }
+        p {
+            @extend %p-box;
+        }
+    }
+}

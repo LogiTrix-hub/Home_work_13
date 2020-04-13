@@ -1,0 +1,30 @@
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1170px
+) !default;
+
+
+$secondary: transparent;
+$font-family-base: 'Oswald', sans-serif;
+$btn-font-size-sm: 14px;
+
+$border-radius:               0;
+$border-radius-lg:            0;
+$border-radius-sm:            0;
+
+$btn-font-weight:             bold;
+$btn-font-size:               20px;
+$warning:                    #ffe600;
+
+$btn-padding-y:               12px;
+$btn-padding-x:               46px;
+
+$p-color:                    #707070;
+
+%p-box {
+  font:300 16px 'Oswald', sans-serif;
+  color: $p-color;
+  margin-bottom: 60px;
+}
