@@ -28,3 +28,8 @@ $p-color:                    #707070;
   color: $p-color;
   margin-bottom: 20px;
 }
+
+%intro-indent {
+  min-height: 0;
+  padding: 20px 0;
+}
