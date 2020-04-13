@@ -1,3 +1,9 @@
+header {
+    position: relative;
+    margin-bottom: -100px;
+    z-index: 999;
+}
+
 .header-wrapper { 
     background-color: #122a2f;
     .navbar {
@@ -20,7 +26,7 @@
                     position: absolute;
                     left: 28px;
                     top: calc(50% - 2px);
-                    @media screen and (max-width: 990px) {
+                    @media screen and (max-width: 991px) {
                         display: none;
                     }
                 }
@@ -32,10 +38,12 @@
                     &:hover {
                         color: #ffe600;
                     }
-                    @media screen and (max-width: 990px) {
+                    @media screen and (max-width: 991px) {
                         margin-left: 0;
                         text-align: center;
                         padding: 10px;
+
+                        font-size: 20px;
                         &:hover {
                             background-color: #ffe600;
                             color: #000;
@@ -45,15 +53,6 @@
             }
         }
     }
-
-    // &:after {
-    //     content: '';
-    //     width: 5px;
-    //     height: 5px;
-    //     background-color: #ffe600;
-    //     position: absolute;
-    //     top: calc(50% - 2px);
-    // }
 
     .navbar-brand {
         font: bold 30px/19px 'Oswald', sans-serif;
@@ -69,7 +68,6 @@
             position: absolute;
             top: 10px;
             left: 0;
-
         }
         span {
             display: block;

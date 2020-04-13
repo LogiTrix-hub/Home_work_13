@@ -2,18 +2,19 @@
 
 .content-wrapper {
     padding-top: 55px;
-    h4 {
+    span {
         text-transform: uppercase;
         font:400 16px 'Oswald', sans-serif;
 
-        margin: 0 0 15px;
+        margin: 0 0 12px;
+        display: block;
     }
     h2 {
         text-transform: uppercase;
         font:700 30px 'Oswald', sans-serif;
         position: relative;
 
-        margin: 0 0 24px;
+        margin: 0 0 20px;
         padding-bottom: 21px;
 
         &::after {
@@ -64,7 +65,7 @@
                 background-color: transparent;
                 border: 1px solid black;
                 &:before {
-                    color: black;
+                    color: #ffe600;
                 }
             }
         }

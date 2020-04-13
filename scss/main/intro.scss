@@ -1,13 +1,13 @@
-.main {
+.intro {
     background-color: #11343a;
-    min-height: 950px;
+    height: 100vh;
 
     display: flex;
     justify-content: center;
     align-items: center;
 
     position: relative;
-    .main-wrapper {
+    .intro-wrapper {
         background-color: #122a2f;
         width: 100%;
         min-height: 370px;
